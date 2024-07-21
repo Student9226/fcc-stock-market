@@ -40,7 +40,6 @@ async function getStock(stock) {
 }
 
 module.exports = function (app) {
-  //https://stock-price-checker-proxy.freecodecamp.rocks/v1/stock/TSLA/quote
 
   app.route("/api/stock-prices").get(async function (req, res) {
     const { stock, like } = req.query;
